@@ -205,7 +205,7 @@ On the contrary to the MCP and SCAD cases, the argument does not *lambda*.
 
 
 # DEMONSTRATION
-In the "demo" folder, demonstration codes for scadpath, mcppath, and, lassopath (demo_scadpath.m, demo_mcppath.m, and demo_lassopath.m, respectively) are available.
+In the "demo" folder, demonstration codes for scadpath, mcppath, and, lassopath (demo_scadpath.m, demo_mcppath.m, and demo_lassopath.m, respectively) are available. A demo code for comparing solution paths of these three regularizers, demo_comppath.m, is also provided. 
 
 
 # REFERENCE
