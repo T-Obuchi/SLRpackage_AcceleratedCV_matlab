@@ -21,12 +21,29 @@ In particular, we solve the following problem:
 ``` -->
 <img src="https://latex.codecogs.com/gif.latex?\hat{\bm{\beta}}={\rm&space;argmin}_{\beta}\left(&space;(1/2)||Y-X\bm{\beta}||_2^2&space;&plus;&space;\sum_{i}^{N}J(\beta_i;\eta)&space;\right)" />
 
-where *J*(*beta;eta*) is a regularizer and *eta* is the set of regularization parameters.
-For SCAD and MCP, *eta*={*lambda,a*} and a solution path  w.r.t. *lambda* given *a* is computed.
-For LASSO, *eta*=*lambda* and *J*(*beta;lambda*)=*lambda*|*beta*| and the solution path is again w.r.t. *lambda*.
-We call *lambda* as amplitude parameter and *a* as switching parameter according to [3].
+where
+<img src="https://latex.codecogs.com/gif.latex?J(\beta;\eta)" />
+is a regularizer and
+<img src="https://latex.codecogs.com/gif.latex?\eta" />
+ is the set of regularization parameters.
+For SCAD and MCP,
+<img src="https://latex.codecogs.com/gif.latex?\eta=\{\lambda,a\}" />
+and a solution path  w.r.t.
+<img src="https://latex.codecogs.com/gif.latex?\lambda" />
+given *a* is computed.
+For LASSO,
+<img src="https://latex.codecogs.com/gif.latex?\eta=\lambda" />
+and
+<img src="https://latex.codecogs.com/gif.latex?J(\beta;\lambda)=\lambda|\beta|" />
+the solution path is again w.r.t.
+<img src="https://latex.codecogs.com/gif.latex?\lambda" />
+.
+We call
+<img src="https://latex.codecogs.com/gif.latex?\lambda" />
+as amplitude parameter and *a* as switching parameter according to [3].
 
-The solution path is here obtained by the *lambda* annealing [3].
+The solution path is here obtained by the
+<img src="https://latex.codecogs.com/gif.latex?\lambda" /> annealing [3].
 This means that in the cases of SCAD and MCP a very particular solution path
 is obtained in the multiple solution region appearing due to the nonconvexity of the penalties.
 We recommend not to use the multiple solution region
