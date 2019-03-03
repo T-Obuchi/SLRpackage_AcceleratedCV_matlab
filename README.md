@@ -34,9 +34,7 @@ is computed.
 For LASSO,
 <img src="https://latex.codecogs.com/gif.latex?\eta=\lambda" />
 and
-<img src="https://latex.codecogs.com/gif.latex?J(\beta;\lambda)=\lambda|\beta|" />. The solution path is again w.r.t.
-<img src="https://latex.codecogs.com/gif.latex?\lambda" />
-.
+<img src="https://latex.codecogs.com/gif.latex?J(\beta;\lambda)=\lambda|\beta|" />. 
 We call
 <img src="https://latex.codecogs.com/gif.latex?\lambda" />
 as amplitude parameter and
