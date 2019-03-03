@@ -30,7 +30,9 @@ For SCAD and MCP,
 <img src="https://latex.codecogs.com/gif.latex?\eta=\{\lambda,a\}" />
 and a solution path  w.r.t.
 <img src="https://latex.codecogs.com/gif.latex?\lambda" />
-given *a* is computed.
+given
+<img src="https://latex.codecogs.com/gif.latex?a" />
+is computed.
 For LASSO,
 <img src="https://latex.codecogs.com/gif.latex?\eta=\lambda" />
 and
@@ -40,7 +42,8 @@ the solution path is again w.r.t.
 .
 We call
 <img src="https://latex.codecogs.com/gif.latex?\lambda" />
-as amplitude parameter and *a* as switching parameter according to [3].
+as amplitude parameter and
+<img src="https://latex.codecogs.com/gif.latex?a" /> as switching parameter according to [3].
 
 The solution path is here obtained by the
 <img src="https://latex.codecogs.com/gif.latex?\lambda" /> annealing [3].
