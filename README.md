@@ -85,9 +85,11 @@ Inputs:
 - lambdaV:    Set of amplitude parameter (Llam dimensional vector). If not specified, a default set of Llam=100 is given.   
 
 - cvoption:   Option for CV. Three options are available:
-                'approximate': Approximate CV is conducted by the method of [1];
-                'literal': Literal CV is conducted;
-                'none': No CV is conducted.
+```matlab
+    'approximate': Approximate CV is conducted by the method of [1];
+    'literal': Literal CV is conducted;
+    'none': No CV is conducted.
+```
 The default setting is 'approximate'.
 
 - kfold:      Fold number for CV. Only used when cvoption='literal'. The default value is 10.
@@ -151,10 +153,12 @@ Inputs:
 - lambdaV:    Set of amplitude parameter (Llam dimensional vector). If not specified, a default set of Llam=100 is given.   
 
 - cvoption:   Option for CV. Four options are available:
-                'approximate1': Approximate CV based on 'approximation 1' in [4] is conducted;
-                'approximate2': Approximate CV based on 'approximation 2' in [4] is conducted;
-                'literal': Literal CV is conducted;
-                'none': No CV is conducted.
+```matlab
+    'approximate1': Approximate CV based on 'approximation 1' in [4] is conducted;
+    'approximate2': Approximate CV based on 'approximation 2' in [4] is conducted;
+    'literal': Literal CV is conducted;
+    'none': No CV is conducted.
+```
 The default setting is 'approximate2'.
 
 - kfold:      Fold number for CV. Only used when cvoption='literal'. The default value is 10.
