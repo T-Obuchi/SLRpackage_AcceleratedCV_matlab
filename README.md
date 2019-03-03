@@ -16,9 +16,10 @@ without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
 Compute a solution path with respect to amplitude parameter *lambda*
 and evaluate the associated CV error (cve) using an efficient approximate formula from [3,4].
 In particular, we solve the following problem:
-```matlab
-   \hat{beta}=argmin_{beta}( (1/2)||Y-X*beta||_2^2 + \sum_{i}^{N}J(beta_i;eta) )
-```
+<!-- ```math
+   \hat{\bm{\beta}}=argmin_{\beta}( (1/2)||Y-X*\beta||_2^2 + \sum_{i}^{N}J(\beta_i;\eta) )
+``` --><img src="https://latex.codecogs.com/gif.latex?\hat{\bm{\beta}}={\rm&space;argmin}_{\beta}\left(&space;(1/2)||Y-X\bm{\beta}||_2^2&space;&plus;&space;\sum_{i}^{N}J(\beta_i;\eta)&space;\right)" />
+
 where *J*(*beta;eta*) is a regularizer and *eta* is the set of regularization parameters.
 For SCAD and MCP, *eta*={*lambda,a*} and a solution path  w.r.t. *lambda* given *a* is computed.
 For LASSO, *eta*=*lambda* and *J*(*beta;lambda*)=*lambda*|*beta*| and the solution path is again w.r.t. *lambda*.
@@ -38,7 +39,7 @@ and the default setting is the approximate one.
 # REQUIREMENT AND PREPARATION
 As a subroutine, cyclic coordinate descent (CCD) algorithm implemented by C language is used,
 and hence please prepare your own C compiler connected to matlab.
-Mex source files are provided, and they can be compiled by typing
+Mex source files are provided. To compile them, pleae move to the "routine" folder and type
 ```matlab
     mex CCD_LASSO.c
     mex CCD_SCAD.c
@@ -205,7 +206,7 @@ On the contrary to the MCP and SCAD cases, the argument does not *lambda*.
 
 
 # DEMONSTRATION
-In the "demo" folder, demonstration codes for scadpath, mcppath, and, lassopath (demo_scadpath.m, demo_mcppath.m, and demo_lassopath.m, respectively) are available. A demo code for comparing solution paths of these three regularizers, demo_comppath.m, is also provided. 
+In the "demo" folder, demonstration codes for scadpath, mcppath, and, lassopath (demo_scadpath.m, demo_mcppath.m, and demo_lassopath.m, respectively) are available. A demo code for comparing solution paths of these three regularizers, demo_comppath.m, is also provided.
 
 
 # REFERENCE
