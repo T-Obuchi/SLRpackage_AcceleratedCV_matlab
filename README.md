@@ -18,7 +18,8 @@ and evaluate the associated CV error (cve) using an efficient approximate formul
 In particular, we solve the following problem:
 <!-- ```math
    \hat{\bm{\beta}}=argmin_{\beta}( (1/2)||Y-X*\beta||_2^2 + \sum_{i}^{N}J(\beta_i;\eta) )
-``` --><img src="https://latex.codecogs.com/gif.latex?\hat{\bm{\beta}}={\rm&space;argmin}_{\beta}\left(&space;(1/2)||Y-X\bm{\beta}||_2^2&space;&plus;&space;\sum_{i}^{N}J(\beta_i;\eta)&space;\right)" />
+``` -->
+<img src="https://latex.codecogs.com/gif.latex?\hat{\bm{\beta}}={\rm&space;argmin}_{\beta}\left(&space;(1/2)||Y-X\bm{\beta}||_2^2&space;&plus;&space;\sum_{i}^{N}J(\beta_i;\eta)&space;\right)" />
 
 where *J*(*beta;eta*) is a regularizer and *eta* is the set of regularization parameters.
 For SCAD and MCP, *eta*={*lambda,a*} and a solution path  w.r.t. *lambda* given *a* is computed.
