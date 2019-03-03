@@ -34,7 +34,7 @@ is computed.
 For LASSO,
 <img src="https://latex.codecogs.com/gif.latex?\eta=\lambda" />
 and
-<img src="https://latex.codecogs.com/gif.latex?J(\beta;\lambda)=\lambda|\beta|" />. 
+<img src="https://latex.codecogs.com/gif.latex?J(\beta;\lambda)=\lambda|\beta|" />.
 We call
 <img src="https://latex.codecogs.com/gif.latex?\lambda" />
 as amplitude parameter and
@@ -55,13 +55,13 @@ and the default setting is the approximate one.
 # REQUIREMENT AND PREPARATION
 As a subroutine, cyclic coordinate descent (CCD) algorithm implemented by C language is used,
 and hence please prepare your own C compiler connected to matlab.
-Mex source files are provided. To compile them, pleae move to the "routine" folder and type
+Mex source files are provided. To compile them, please move to the "routine" folder and type
 ```matlab
     mex CCD_LASSO.c
     mex CCD_SCAD.c
     mex CCD_MCP.c
 ```
-on matlab of your own environment. Please complete this before using the functions in the package.
+on matlab in your own environment. Please complete this before using the functions in the package.
 
 
 # USAGE FOR SCAD
